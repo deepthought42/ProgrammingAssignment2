@@ -32,10 +32,3 @@ cacheSolve <- function(x, ...) {
   x$setsolve(m)
   m
 }
-
-mat <- matrix(1:9, ncol=3)
-mat = replicate(10, rnorm(10)) 
-vect <- makeCacheMatrix(mat)
-vect
-cacheSolve(vect)
-cacheSolve(vect)
